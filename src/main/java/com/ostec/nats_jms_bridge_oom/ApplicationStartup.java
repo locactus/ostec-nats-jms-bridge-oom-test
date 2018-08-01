@@ -1,4 +1,4 @@
-package com.ostec.nats_jms_bridge;
+package com.ostec.nats_jms_bridge_oom;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -7,10 +7,9 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
 
-
-import com.ostec.nats_jms_bridge.connect.PolygonIOConnectionManager;
-import com.ostec.nats_jms_bridge.feed.dispatcher.Dispatcher;
-import com.ostec.nats_jms_bridge.feed.dispatcher.FeedQueue;
+import com.ostec.nats_jms_bridge_oom.connect.PolygonIOConnectionManager;
+import com.ostec.nats_jms_bridge_oom.feed.dispatcher.Dispatcher;
+import com.ostec.nats_jms_bridge_oom.feed.dispatcher.FeedQueue;
 
 
 @Component

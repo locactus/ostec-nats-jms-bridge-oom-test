@@ -1,4 +1,4 @@
-package com.ostec.nats_jms_bridge.feed.dispatcher;
+package com.ostec.nats_jms_bridge_oom.feed.dispatcher;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.ostec.nats_jms_bridge.feed.jms_sender.ProcessServiceMessageSender;
+import com.ostec.nats_jms_bridge_oom.feed.jms_sender.ProcessServiceMessageSender;
 
 
 @Component

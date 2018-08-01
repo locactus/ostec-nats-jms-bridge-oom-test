@@ -1,4 +1,4 @@
-package com.ostec.nats_jms_bridge.feed.jms_sender;
+package com.ostec.nats_jms_bridge_oom.feed.jms_sender;
 
 import javax.jms.DeliveryMode;
 import javax.jms.JMSException;

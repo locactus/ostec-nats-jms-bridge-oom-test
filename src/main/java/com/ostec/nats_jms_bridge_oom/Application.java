@@ -1,4 +1,4 @@
-package com.ostec.nats_jms_bridge;
+package com.ostec.nats_jms_bridge_oom;
 
 import java.util.Locale;
 import org.springframework.boot.SpringApplication;
@@ -23,7 +23,7 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 @SpringBootApplication
 @ImportResource({ "classpath:JMSCommsContext.xml" })
 @EnableJms
-@ComponentScan({ "com.ostec.nats_jms_bridge"})
+@ComponentScan({ "com.ostec.nats_jms_bridge_oom"})
 @EnableScheduling
 @EnableAsync
 @Configuration
@@ -34,7 +34,7 @@ public class Application extends WebMvcConfigurerAdapter {
 		SpringApplication.run(Application.class, args);
 		
 	}
-	
+	 
 	
 	
 	@Bean(name = "createCandleTaskExecutor")

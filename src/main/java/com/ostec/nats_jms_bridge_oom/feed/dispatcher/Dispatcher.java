@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.ostec.nats_jms_bridge.feed.dispatcher;
+package com.ostec.nats_jms_bridge_oom.feed.dispatcher;
 
 import java.nio.charset.StandardCharsets;
 import org.apache.log4j.LogManager;
@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import com.ostec.nats_jms_bridge.feed.jms_sender.ProcessServiceMessageSender;
+import com.ostec.nats_jms_bridge_oom.feed.jms_sender.ProcessServiceMessageSender;
 
 import io.nats.client.Connection;
 
