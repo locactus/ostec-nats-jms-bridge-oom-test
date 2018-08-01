@@ -1,1 +1,1 @@
-# ostec-nats-jms-bridge
+# ostec-nats-jms-bridge-oom-test
