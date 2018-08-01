@@ -14,6 +14,7 @@ import io.nats.client.Nats;
 import io.nats.client.Options;
 
 public class Ticker {
+	private static int messageCount = 0 ;
     private static long targetRate = 1_000_000;
     private static AtomicLong sent = new AtomicLong();
     private static long start;
@@ -30,6 +31,7 @@ public class Ticker {
             start = System.nanoTime();
             while (true) {
                 nc.publish("updates", String.format("%s - %d", "nats", published).getBytes(StandardCharsets.UTF_8));
+                messageCount++ ;
                 adjustAndSleep(nc);
             }
         } catch (Exception e) {
@@ -92,6 +94,7 @@ public class Ticker {
                                             NumberFormat.getIntegerInstance().format(count),
                                             humanBytes(Runtime.getRuntime().freeMemory()),
                                             humanBytes(Runtime.getRuntime().totalMemory()));
+            System.out.println("messageCount="+messageCount);
         }
 	}
 }
